@@ -1,0 +1,30 @@
+{
+    "description": "LAP 2 debug assignment",
+    "scripts": {
+      "start": "node index.js",
+      "dev": "nodemon index.js",
+      "seedDev": "node dbConfig/seedDev.js",
+      "test": "jest --setupFiles ./tests/integration/config.js --watchAll --detectOpenHandles --runInBand --verbose",
+      "unitTests": "jest --testPathPattern=/unit/ --watchAll --verbose",
+      "coverage": "jest --testPathPattern=/unit/ --coverage"
+    },
+    "jest": {
+      "testEnvironment": "node",
+      "coveragePathIgnorePatterns": [
+        "/node_modules/"
+      ]
+    },
+    "author": "futureproof",
+    "license": "ISC",
+    "devDependencies": {
+      "jest": "^26.4.2",
+      "nodemon": "^2.0.4",
+      "supertest": "^4.0.2"
+    },
+    "dependencies": {
+      "body-parser": "^1.20.0",
+      "cors": "^2.8.5",
+      "express": "^4.17.1",
+      "pg": "^8.3.3"
+    }
+  }
