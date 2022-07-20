@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
+#author, #title, #body {
+        background: transparent;
+        resize: none;
+        border: 0 none;
+        outline: none;
+}
+
+.textbox {
+    text-align: center;
+}
+
+input[type="text"] {
+  margin: 10px 0px 10px 0px;
+  
+}
+
+  body {
+    text-align: center;
+    justify-content: center;
+    background-color: #fdfefa;
+    flex-flow: row wrap;
+  }
+  
+  :focus {
+    outline: none;
+  }
+
+  .postContainer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
